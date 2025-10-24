@@ -1,0 +1,47 @@
+The Netlify deploy errored, with the following guidance provided:
+
+**Diagnosis:**
+The build failure is due to an error in parsing the `package.json` file. The log indicates that the JSON.parse process failed due to an unexpected token, indicating that the `package.json` file is not valid JSON.
+
+**Solution:**
+1. Verify the `package.json` file in the repository to check if there are any syntax errors or unexpected characters that might be causing the parsing issue.
+2. Ensure that the `package.json` file is structured correctly with all JSON key-value pairs enclosed in double quotes and separated by commas.
+3. Correct any syntax errors in the `package.json` file.
+4. After making the necessary changes, commit the corrected `package.json` file to the repository.
+5. Trigger a new build on Netlify to see if the issue is resolved.
+
+The relevant error logs are:
+
+Line 0: build-image version: 9b5eda74bd0982ea06a6fdf058a78c4ba15c7b10 (noble)
+Line 1: buildbot version: 9b5eda74bd0982ea06a6fdf058a78c4ba15c7b10
+Line 2: Fetching cached dependencies
+Line 3: Failed to fetch cache, continuing with build
+Line 4: Starting to prepare the repo for build
+Line 5: No cached dependencies found. Cloning fresh repo
+Line 6: git clone --filter=blob:none https://github.com/cdxidigital/whoredash
+Line 7: Preparing Git Reference refs/heads/main
+Line 8: Starting to install dependencies
+Line 9: v22.18.0 is already installed.
+Line 10: Now using node v22.18.0 (npm v10.9.3)
+Line 11: Enabling Node.js Corepack
+Line 12: Started restoring cached build plugins
+Line 13: Finished restoring cached build plugins
+Line 14: Started restoring cached corepack dependencies
+Line 15: Finished restoring cached corepack dependencies
+Line 16: No npm workspaces detected
+Line 17: Started restoring cached node modules
+Line 18: Finished restoring cached node modules
+Line 19: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+Line 20: Installing npm packages using npm version 10.9.3
+Line 21: npm error code EJSONPARSE
+Line 22: npm error path /opt/build/repo/package.json
+Line 23: npm error JSON.parse Unexpected token "/" (0x2F), "/'{
+npm error JSON.parse   "nam"... is not valid JSON while parsing '/'{
+Line 24: npm error JSON.parse   "name": "rest-express",
+Line 25: npm error JSON.parse   "version'
+npm error JSON.parse Failed to parse JSON data.
+Line 26: npm error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+Line 27: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-08-25T07_05_13_202Z-debug-0.log
+Line 28: Error during npm install
+Line 29: Failing build: Failed to install dependencies
+Line 30: Finished processing build request in 4.054s

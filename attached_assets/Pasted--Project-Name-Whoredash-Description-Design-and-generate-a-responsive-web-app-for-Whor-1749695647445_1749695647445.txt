@@ -1,0 +1,73 @@
+📛 Project Name: Whoredash  
+📝 Description:  
+Design and generate a responsive web app for **Whoredash**, a premium on-demand **lifestyle companion booking** platform. The platform connects verified independent service providers with verified clients for exclusive private experiences, bookings, and scheduling. It should resemble a hybrid of **Doordash x OnlyFans x Calendly**, but designed with high-end concierge aesthetics.
+
+---
+
+🎯 **Goal:**  
+A mobile-first web app that allows clients to browse available profiles, view bios, galleries, pricing, and instantly request bookings. Lifestyle professionals can manage their availability, profile, and earnings. Admin panel required.
+
+---
+
+🌐 Pages to Create (with content & components):  
+1. **Landing Page**  
+   - Headline: “Your Experience, Delivered Instantly”  
+   - Subtext: “Discover premium lifestyle companions on demand—available near you.”  
+   - CTA Buttons: [Browse Directory] [Join as Companion]  
+   - 3-Step “How It Works” section  
+   - Testimonials (3 short quotes)  
+   - Newsletter form
+
+2. **Browse Directory**  
+   - Grid of 12 profile cards (photo, price/hr, rating, [Details] button)  
+   - Filters: Location, Price, Service Category, Availability  
+   - Pagination or infinite scroll
+
+3. **Companion Profile Page**  
+   - Profile image banner, name, verified badge, star rating  
+   - Bio section + “What I Offer” services list  
+   - Availability calendar (selectable time slots)  
+   - Image gallery (lightbox)  
+   - [Instant Book Now] button  
+   - Review section (name, star rating, comment)
+
+4. **Booking Flow**  
+   - Step 1: Select date & time  
+   - Step 2: Fill in name/email/phone  
+   - Step 3: Payment placeholder (Stripe-style UI)  
+   - Confirmation screen with event summary and “Add to Calendar” button
+
+5. **Client Dashboard**  
+   - Past & Upcoming bookings  
+   - Saved companions  
+   - Account & notification settings
+
+6. **Companion Dashboard**  
+   - Earnings summary + stats  
+   - Upcoming bookings with status  
+   - Edit profile: bio, pricing, availability, gallery upload  
+   - Request payout button
+
+7. **Admin Panel**  
+   - Manage users & companions  
+   - View bookings calendar  
+   - Edit FAQs / About / Policies
+
+8. **Static Pages**  
+   - About Us  
+   - FAQs  
+   - Contact Form  
+   - Terms of Service  
+   - Privacy Policy
+
+---
+
+🎨 **Design System**  
+- Logo: Use a modern script logo with hot pink lips icon (transparent PNG)  
+- Fonts: Montserrat (headings), Poppins (body)  
+- Colors:  
+  - Primary: #000000 (black)  
+  - Accent: #FF1493 (hot pink)  
+  - Light: #F4F4F4 (gray)  
+  - Background: #FFFFFF (white)  
+- Components: Card-based layout, rounded buttons, shadows, SVG icons (heart, lips,
